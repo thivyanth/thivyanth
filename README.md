@@ -1,18 +1,19 @@
-<!--
-**thivyanth/thivyanth** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
+---
+permalink: /
+title: "About Me"
+excerpt: "About me"
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+---
+<!-- 
+I have a profound passion for Machine Learning.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-# Hi there 👋, welcome to Thivyanth Venkateswaran's GitHub!
+--- -->
+
+# Hi there 👋, welcome to Thivyanth Venkateswaran's Profile Page!
 
 ## About Me | 🔗 [thivyanth.github.io/about](https://thivyanth.github.io/about)
 Hello! I'm Thivyanth Venkateswaran, a 3rd-year engineering undergraduate at the Indian Institute of Technology Bombay (IIT Bombay), specializing in Machine Learning.
@@ -38,4 +39,4 @@ For a detailed overview of my projects, publications, and etc., look around my w
 ## Let's Connect
 I'm open to academic collaborations and industry partnerships that leverage AI to solve real-world problems. If you're interested in working together, please reach out through my website where you can also find more information about my past work and future endeavors.
 
-Thank you for visiting my GitHub profile!
+Thank you for visiting my profile!
