@@ -1,17 +1,23 @@
 import os
-from bs4 import BeautifulSoup
 import requests
 
-# URL of your website
-url = "https://thivyanth.github.io"
+# GitHub repository information
+REPO = "thivyanth/thivyanth.github.io"
+FILE_PATH = "_pages/about.md"
+GITHUB_TOKEN = os.getenv('GH_TOKEN')
 
-# Fetch the About Me content from your website
-response = requests.get(url)
-soup = BeautifulSoup(response.text, 'html.parser')
+# GitHub API URL to fetch the file
+api_url = f"https://api.github.com/repos/{REPO}/contents/{FILE_PATH}"
 
-# Extract the necessary information (assuming it's in a div with class 'about')
-about_section = soup.find('div', class_='about')
-about_content = about_section.get_text(separator="\n") if about_section else "About section not found."
+# Fetch the file content from GitHub
+headers = {"Authorization": f"token {GITHUB_TOKEN}"}
+response = requests.get(api_url, headers=headers)
+
+if response.status_code == 200:
+    file_content = response.json().get('content')
+    about_content = file_content.decode('base64') if file_content else "About section not found."
+else:
+    about_content = "Failed to fetch About section from GitHub."
 
 # Define the README content
 readme_content = f"""
