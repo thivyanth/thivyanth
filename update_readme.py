@@ -1,5 +1,6 @@
 import os
 import requests
+import base64
 
 # GitHub repository information
 REPO = "thivyanth/thivyanth.github.io"
@@ -15,7 +16,7 @@ response = requests.get(api_url, headers=headers)
 
 if response.status_code == 200:
     file_content = response.json().get('content')
-    about_content = file_content.decode('base64') if file_content else "About section not found."
+    about_content = base64.b64decode(file_content).decode('utf-8') if file_content else "About section not found."
 else:
     about_content = "Failed to fetch About section from GitHub."
 
