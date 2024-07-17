@@ -1,14 +1,17 @@
 import os
 import requests
 import base64
+from github import Github
 
 # GitHub repository information
-REPO = "thivyanth/thivyanth.github.io"
-FILE_PATH = "_pages/about.md"
+REPO_NAME = "thivyanth/thivyanth"
+FILE_PATH = "README.md"
 GITHUB_TOKEN = os.getenv('GH_TOKEN')
 
 # GitHub API URL to fetch the file
-api_url = f"https://api.github.com/repos/{REPO}/contents/{FILE_PATH}"
+REPO = "thivyanth/thivyanth.github.io"
+SOURCE_FILE_PATH = "_pages/about.md"
+api_url = f"https://api.github.com/repos/{REPO}/contents/{SOURCE_FILE_PATH}"
 
 # Fetch the file content from GitHub
 headers = {"Authorization": f"token {GITHUB_TOKEN}"}
@@ -25,6 +28,15 @@ readme_content = f"""
 {about_content}
 """
 
-# Write the content to README.md
-with open("README.md", "w") as readme_file:
-    readme_file.write(readme_content)
+# Initialize GitHub client
+g = Github(GITHUB_TOKEN)
+repo = g.get_repo(REPO_NAME)
+
+# Get the current README file
+contents = repo.get_contents(FILE_PATH, ref="main")
+
+# Update the README file
+if contents.decoded_content.decode("utf-8") != readme_content:
+    repo.update_file(contents.path, "Update README from website", readme_content, contents.sha, branch="main")
+else:
+    print("No changes detected in README.md")
