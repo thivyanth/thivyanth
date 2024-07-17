@@ -28,11 +28,20 @@ jobs:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
       run: python update_readme.py
 
-    - name: Commit and push if changes
+    - name: Commit and push changes
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
       run: |
-        git config --global user.email "thivyanth2004@gmail.com"
-        git config --global user.name "thivyanth"
-        git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}
-        git diff --exit-code || (git add . && git commit -m "Update README from website" && git push origin main)
+        set -e
+        echo "Committing and pushing changes..."
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add .
+        git status
+        if git diff --cached --quiet; then
+          echo "No changes to commit."
+        else
+          git commit -m 'Update README from website'
+          git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
+          echo "Changes committed and pushed."
+        fi
