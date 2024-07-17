@@ -21,7 +21,7 @@ I'm deeply engaged in research with a focus on:
 I'm always looking to collaborate on projects and research that push the boundaries of AI and ML.
 
 ## My Work | 🔗 [thivyanth.github.io/portfolio](https://thivyanth.github.io/portfolio)
-I undertake various ML research projects and have been involved in several notable competitions and publications. Some highlights of my work include:
+I undertake various ML research projects and have been involved in some competitions and research projects. Some highlights of my work include:
 - Participation in the RoboDrive Competition (ICRA 2024), where I focused on robust multi-modal BEV 3D object detection.
 - Research on optimizing diffusion models for downstream tasks using reinforcement learning under the guidance of Prof. Biplab Banerjee.
 
