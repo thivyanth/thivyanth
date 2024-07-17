@@ -32,6 +32,6 @@ jobs:
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
       run: |
-        git config --global user.email "you@example.com"
-        git config --global user.name "Your Name"
+        git config --global user.email "thivyanth2004@gmail.com"
+        git config --global user.name "thivyanth"
         git diff --exit-code || (git add . && git commit -m "Update README from website" && git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git)
