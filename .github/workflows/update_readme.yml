@@ -27,7 +27,9 @@ jobs:
       run: python update_readme.py
 
     - name: Commit and push if changes
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
       run: |
         git config --global user.email "you@example.com"
         git config --global user.name "Your Name"
-        git diff --exit-code || (git commit -am "Update README from website" && git push)
+        git diff --exit-code || (git add . && git commit -m "Update README from website" && git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git)
