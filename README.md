@@ -17,6 +17,8 @@ I'm deeply engaged in research with a focus on:
 - **Generative AI**
 - **Generative Policy**
 - **AI Reasoning**
+- **Continual Learning**
+- **Open World & Lifelong Learning**
 
 I'm always looking to collaborate on projects and research that push the boundaries of AI and ML.
 
