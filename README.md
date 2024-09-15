@@ -1,9 +1,5 @@
 
-<!-- 
-I have a profound passion for Machine Learning.
-
---- -->
-
+<!-- ## Hi There 👋, Welcome to Thivyanth Venkateswaran's Profile Page! -->
 ## Hi There 👋, Welcome to Thivyanth Venkateswaran's Profile Page!
 
 ### About Me | 🔗 [thivyanth.github.io/about](https://thivyanth.github.io/about)
@@ -22,6 +18,11 @@ I'm deeply engaged in research with a focus on:
 - **Open World & Lifelong Learning**
 
 I'm always looking to collaborate on projects and research that push the boundaries of AI.
+
+---
+
+### Publications | 🔗 [Google Scholar](https://scholar.google.com/citations?user=2PNJeToAAAAJ)
+While I don't have any publications yet, I'm actively working on research that I hope will lead to my first publication soon. Stay tuned for updates!
 
 ---
 
