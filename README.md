@@ -6,7 +6,7 @@
 #### Hi There 👋, Welcome to Thivyanth Venkateswaran's Profile Page!
 
 ##### About Me
-Hello! I'm Thivyanth Venkateswaran, a 3rd-year engineering undergraduate at the Indian Institute of Technology Bombay (IIT Bombay), specializing in Machine Learning.
+Hello! I'm Thivyanth Venkateswaran, a 4th-year engineering undergraduate at the Indian Institute of Technology Bombay (IIT Bombay), specializing in Machine Learning.
 
 <div class="profile-links" style="margin: 1.5em 0; padding: 10px 15px; background-color: #f8f9fa; border-radius: 5px; border-left: 3px solid #2C7A7B;">
   <p style="margin: 0.3em 0;"><strong>📄 CV/Resume:</strong> <a href="https://thivyanth.github.io/cv" style="border-bottom: none; font-weight: 500;">thivyanth.github.io/cv</a></p>
@@ -30,7 +30,6 @@ I'm always looking to collaborate on projects and research that push the boundar
 ##### Publications
 <div class="publications-section" style="padding: 10px 15px; background-color: #f8f9fa; border-radius: 5px;">
   <p style="margin: 0.5em 0;"><a href="https://scholar.google.com/citations?user=2PNJeToAAAAJ" style="border-bottom: none;"><i class="fas fa-graduation-cap" style="color: #2C7A7B; margin-right: 5px;"></i><strong>Google Scholar Profile</strong></a></p>
-  <p>While I don't have any publications yet, I'm actively working on research that I hope will lead to publications soon. Some of my work is under review and will be published soon. Stay tuned for updates!</p>
 </div>
 
 ##### My Work
